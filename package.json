@@ -1,0 +1,39 @@
+{
+  "name": "cinemaproj",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "front": "cd client && npm start",
+    "back": "nodemon server",
+    "dev": "concurrently \"npm run front\" \"npm run back\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix front && npm run build --prefix front"
+  },
+  "keywords": [
+    "node",
+    "expresse",
+    "mongoose"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
+    "express-validator": "^6.13.0",
+    "fullcalendar": "^5.10.1",
+    "googleapis": "^91.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.13",
+    "multer": "^1.4.3",
+    "nodemailer": "^6.7.1",
+    "qrcode": "^1.4.4",
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "concurrently": "^6.4.0",
+    "dotenv": "^10.0.0",
+    "nodemon": "^2.0.15"
+  }
+}
